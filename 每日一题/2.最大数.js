@@ -13,19 +13,19 @@
  */
 
 var largestNumber = function (nums) {
-    let arr = []
-    let max = "0",maxi = 0
-    while (nums.length>0) {
-        for (let i = 0; i < nums.length; i++) {
-            if (String(nums[i]) > max) {
-                max = String(nums[i])
-                maxi=i
-            }
+    nums.sort((x, y) => {
+        let sx = 10, sy = 10;
+        while (sx <= x) {
+            sx *= 10;
         }
-        max='0'
-        arr.push(nums.splice(maxi,1))
+        while (sy <= y) {
+            sy *= 10;
+        }
+        return '' + (sx * y + x) - ('' + (sy * x + y));
+    })
+    if (nums[0] === 0) {
+        return '0';
     }
-    
-    console.log(arr);
+    return nums.join('');
 }
 largestNumber([3,30,34,5,9])
