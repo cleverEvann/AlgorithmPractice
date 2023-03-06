@@ -20,4 +20,4 @@ var replaceSpaces = function (S, length) {
   }
   return res
 };
-//j
+replaceSpaces()
