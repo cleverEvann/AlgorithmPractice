@@ -27,11 +27,9 @@ var findMedianSortedArrays = (nums1, nums2) => {
 
         //如果左边没字符了，就定义成-Infinity，让所有数都大于它，否则就是nums1二分的位置左边一个
         let L1 = partLen1 === 0 ? -Infinity : nums1[partLen1 - 1]
-        //如果左边没字符了，就定义成-Infinity，让所有数都大于它，否则就是nums2二分的位置左边一个
         let L2 = partLen2 === 0 ? -Infinity : nums2[partLen2 - 1]
         //如果右边没字符了，就定义成Infinity，让所有数都小于它，否则就是nums1二分的位置
         let R1 = partLen1 === len1 ? Infinity : nums1[partLen1]
-        //如果右边没字符了，就定义成Infinity，让所有数都小于它，否则就是nums1二分的位置
         let R2 = partLen2 === len2 ? Infinity : nums2[partLen2]
 
         if (L1 > R2) {//不符合交叉小于等于 继续二分
