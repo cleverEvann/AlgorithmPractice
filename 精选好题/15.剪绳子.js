@@ -21,6 +21,6 @@ var cuttingRope = function(n) {
         result *= 3;
         n -=3;
     }
-    return result * n;
+    return result * n;  
 };
 
