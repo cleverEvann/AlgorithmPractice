@@ -62,3 +62,4 @@ let haystack = "hello world";
 let needle = "world";
 let index = strStr(haystack, needle);
 console.log(index); // 输出 6
+
