@@ -12,6 +12,7 @@
  * @param {string} needle
  * @return {number}
  */
+
 var strStr = function(haystack, needle) {
     let m = haystack.length;
     let n = needle.length;
