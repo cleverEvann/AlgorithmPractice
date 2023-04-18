@@ -27,5 +27,5 @@ var groupAnagrams = function(strs) {
             map.set(sortedStr, [str]);
         }
     }
-    return Array.from(map, values());
+    return Array.from(map.values());
 };
