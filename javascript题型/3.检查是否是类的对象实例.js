@@ -23,4 +23,4 @@ var checkIfInstanceOf = function(obj, classFunction) {
 
 /**
  * checkIfInstanceOf(new Date(), Date); // true
- */
+ */  
