@@ -37,4 +37,4 @@ var maxOperations = function (nums, k) {
         }
     }
     return time;
-};
+}; 
