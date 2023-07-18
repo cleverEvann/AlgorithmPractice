@@ -20,3 +20,4 @@ var findMaxAverage = function(nums, k) {
     }
     return max/k;
 };
+ 
