@@ -67,4 +67,4 @@ var closeStrings = function(word1, word2) {
         }
     }
     return true
-};
+};  
