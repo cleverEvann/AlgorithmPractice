@@ -19,4 +19,4 @@ function version_compare(v1, v2) {
         return (arr1.length > arr2.length) ? 1 : -1;
     }
 }
-console.log(version_compare('1.1.9','1.2.0'));
+console.log(version_compare('1.1.9','1.2.0')); 
